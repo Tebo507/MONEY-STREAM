@@ -139,6 +139,39 @@ width:100%;
 border-radius:15px;
 }
 
+  .menu-toggle {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #087f35;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 15px 0;
+    }
+}
 .about h2{
 color:#0a7c39;
 margin-bottom:20px;
