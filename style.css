@@ -161,6 +161,40 @@ border-radius:12px;
 box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #087f35;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 15px 0;
+    }
+}
+
 .contact-info p{
 margin:18px 0;
 }
