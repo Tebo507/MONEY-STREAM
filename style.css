@@ -234,5 +234,15 @@ font-size:34px;
 .container{
 width:95%;
 }
+  .hidden{
+opacity:0;
+transform:translateY(40px);
+transition:all .6s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
 
 }
