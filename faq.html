@@ -30,6 +30,39 @@ font-weight:600;
 color:#0a7c39;
 list-style:none;
 }
+  .menu-toggle {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #087f35;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 15px 0;
+    }
+}
 
 summary::-webkit-details-marker{
 display:none;
@@ -50,8 +83,10 @@ line-height:1.8;
 <div class="logo">
 Money <span>Stream</span>
 </div>
-
-<nav>
+<div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</div>
+<nav id="nav-menu">
 
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
